@@ -1,0 +1,6 @@
+{
+  "name": "SimulaReforma: Simulador da Reforma Tributária 2027",
+  "description": "SimulaReforma - Simulador inteligente e explicativo da Reforma Tributária 2027 com comparativo entre Simples Nacional Híbrido, Simplificado, Lucro Presumido e Lucro Real, análise de créditos IBS/CBS, produtos monofásicos e ICMS-ST.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

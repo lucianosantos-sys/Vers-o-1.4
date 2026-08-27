@@ -1,0 +1,86 @@
+# ==============================================================================
+# PROJETO: SIMULADOR TRIBUTÁRIO 2027 (REFORMA EC 132/2023 & LC 123/2006)
+# REQUISITOS, DEPENDÊNCIAS E ESPECIFICAÇÕES DO SISTEMA (requirements.txt)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. AMBIENTE DE EXECUÇÃO (RUNTIME ENVIRONMENT)
+# ------------------------------------------------------------------------------
+# Node.js: Versão 18.x, 20.x ou 22.x LTS (Recomendado: Node >= 20.0.0)
+# NPM: Versão 9.x ou 10.x
+# Sistema Operacional: Linux (Ubuntu/Debian/Alpine), macOS ou Windows
+# Porta de Ingress/Execução: 3000 (0.0.0.0:3000)
+
+# ------------------------------------------------------------------------------
+# 2. DEPENDÊNCIAS DE PRODUÇÃO (NPM PACKAGES - DEPENDENCIES)
+# ------------------------------------------------------------------------------
+# Núcleo Frontend (React 19)
+react>=19.0.1
+react-dom>=19.0.1
+
+# Servidor Backend & Roteamento API
+express>=4.21.2
+dotenv>=17.2.3
+
+# Inteligência Artificial & Consultoria Tributária (Google Gemini API SDK)
+@google/genai>=2.4.0
+
+# Interface, Design System & Ícones (Tailwind CSS v4 + Lucide)
+lucide-react>=0.546.0
+clsx>=2.1.1
+tailwind-merge>=3.6.0
+@tailwindcss/vite>=4.1.14
+
+# Animações & Experiência Visual
+motion>=12.23.24
+canvas-confetti>=1.9.4
+
+# Gráficos & Visualização de Cargas Tributárias (D3/SVG)
+recharts>=3.10.1
+
+# Bundler e Ferramenta de Build
+vite>=6.2.3
+@vitejs/plugin-react>=5.0.4
+
+# ------------------------------------------------------------------------------
+# 3. DEPENDÊNCIAS DE DESENVOLVIMENTO & TIPAGEM (DEV DEPENDENCIES)
+# ------------------------------------------------------------------------------
+# TypeScript e Execução Direta
+typescript>=5.8.2
+tsx>=4.21.0
+esbuild>=0.25.0
+
+# Tipagens Estáticas
+@types/node>=22.14.0
+@types/express>=4.17.21
+@types/canvas-confetti>=1.9.0
+
+# Processamento CSS
+tailwindcss>=4.1.14
+autoprefixer>=10.4.21
+
+# ------------------------------------------------------------------------------
+# 4. VARIÁVEIS DE AMBIENTE (.env)
+# ------------------------------------------------------------------------------
+# GEMINI_API_KEY: Chave de API do Google Gemini (utilizada no servidor para o Consultor IA)
+# NODE_ENV: 'development' | 'production'
+# PORT: 3000
+
+# ------------------------------------------------------------------------------
+# 5. COMANDOS DE INSTALAÇÃO E EXECUÇÃO
+# ------------------------------------------------------------------------------
+# Instalar todas as dependências:
+#   npm install
+#
+# Executar em ambiente de desenvolvimento (porta 3000):
+#   npm run dev
+#
+# Compilar projeto para produção (Frontend + Servidor CJS):
+#   npm run build
+#
+# Iniciar em produção:
+#   npm start
+#
+# Checagem de tipos (Lint):
+#   npm run lint
+# ==============================================================================
